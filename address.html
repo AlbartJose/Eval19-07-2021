@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <style>
+        input,button{
+            padding: 10px;
+            margin: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Add Addreess</h1>
+    <form>
+        <input type="text" placeholder="Address Line 1" /><br>
+        <input type="text" placeholder="Address Line 2" /><br>
+        <button onclick="payNow(event)">Pay</button>
+    </form>
+    
+
+</body>
+
+</html>
+<script>
+
+
+    function payNow(e) {
+        e.preventDefault();
+
+        console.log(1);
+        window.location.href = "pay.html"
+    }
+
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <style>
+        input,
+        button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 20px;
+            width: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Add Addreess</h1>
+    <form>
+        <input type="text" placeholder="Card No" /><br>
+        <input type="text" placeholder="CVV" /><br>
+        <input type="text" placeholder="Pin" /><br>
+        <button onclick="thankYou(event)">ThankYou</button>
+    </form>
+
+
+</body>
+
+</html>
+<script>
+    function thankYou(e) {
+        e.preventDefault();
+        window.location.href = "placed.html"
+    }
+
+</script>

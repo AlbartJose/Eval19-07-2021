@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+            #display{
+                display: grid;
+                margin: auto;
+                margin-top: 30px;
+                grid-template-columns: repeat(4,22%);
+                grid-column-gap: 4%;
+                width: 1200px;
+                grid-row-gap: 25px;
+                background-color: coral;
+            }
+            div>img{
+                width: 100%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 id="head">Jwellery Products</h1>
+        
+        <button id="sorlHL" onclick="sortHL()">Sort High-Low</button>
+        <button id="sorlLH" onclick="sortLH()">Sort Low-High</button>
+        <label>Filter by Type:</label>
+        <select id="filterType" onchange="filterType()">
+            <option value="all">All</option>
+            <option value="earing">Earing</option>
+            <option value="ring">Ring</option>
+            <option value="pendant">Pendant</option>
+
+        </select>
+        <label>Filter by Gender:</label>
+        <select id="filtergender" onchange="filtergender()">
+            <option value="all">All</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <button onclick="goCart()">Go to Cart</button>
+
+        <div id="display"></div>
+
+    </body>
+</html>
+<script src="products.js">
+
+</script>
